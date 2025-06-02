@@ -1,17 +1,8 @@
 import React from 'react';
+import { Todo } from '../../App'; // шлях може бути іншим, залежно від структури
 
 interface Props {
-  todo: {
-    id: number;
-    title: string;
-    completed: boolean;
-    user: {
-      id: number;
-      name: string;
-      username: string;
-      email: string;
-    };
-  };
+  todo: Todo;
 }
 
 export const TodoInfo: React.FC<Props> = ({ todo }) => {
